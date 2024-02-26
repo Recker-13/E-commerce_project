@@ -1,0 +1,71 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="CSS/checkout.css"
+<body>
+    <div class="container">
+        <div class="checkout-summary">
+            <h2>Checkout</h2>
+            <div class="product-details">
+                <img src="Image/Nike-cap.jpg" alt="Product Image">
+                <div class="product-info">
+                    <h3>Red Nike Hat</h3>
+                    <p class="description">"
+                        A Nike hat can be described as a sleek and sporty accessory, crafted with high-quality materials designed for both performance and style. Typically, these hats feature the iconic Nike swoosh logo prominently displayed on the front, showcasing the brand's identity and commitment to athletic excellence."</p>
+                    <p>Size: M</p>
+                    <p>Color: Red</p>
+                    <p>Price: $30.00</p>
+                </div>
+            </div>
+            <div class="customer-info">
+                <h3>Customer Information</h3>
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Shipping Address</label>
+                        <textarea id="address" placeholder="Enter your shipping address" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="payment">Payment Method</label>
+                        <select id="payment" required>
+                            <option value="" selected disabled>Select Payment Method</option>
+                            <option value="cash">Cash on Delivery</option>
+                            <option value="visa">VISA Card</option>
+                        </select>
+                    </div>
+                    <div class="form-group visa-card" style="display: none;">
+                        <label for="visacard">VISA Card Number</label>
+                        <input type="text" id="visacard" placeholder="Enter VISA card number">
+                    </div>
+                    <button type="submit">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 ROG Clothing Store</p>
+    </footer>
+    <script>
+        const paymentSelect = document.getElementById('payment');
+        const visaCardGroup = document.querySelector('.visa-card');
+
+        paymentSelect.addEventListener('change', function() {
+            if (this.value === 'visa') {
+                visaCardGroup.style.display = 'block';
+                document.getElementById('visacard').setAttribute('required', true);
+            } else {
+                visaCardGroup.style.display = 'none';
+                document.getElementById('visacard').removeAttribute('required');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,513 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+
+
+
+
+
+
+nav{
+    flex: 1;
+    text-align: right;
+    position: absolute;
+    padding-left: 620px;
+}
+
+
+.header .logo img{
+    width: 200px;
+    height: 100px;
+}
+
+
+nav ul{
+    display: inline block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+p{
+    color: gray;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 250px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    font-weight: bolder;
+}
+
+.row .col2 .button{
+    display: inline-block;
+    background: tomato;
+    color: whitesmoke;
+    padding: 8px 30px;
+    margin: 30px 0px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 1s;
+    border-color: tomato;
+}
+
+.row .col2 .button:hover{
+    background: #563434;
+}
+
+.header{
+    background: radial-gradient(#fff6f6,#d04c27c6);
+    width: 100%;
+    height: 820px;
+}
+
+
+.header .row{
+    margin-top: 50px;
+}
+
+.categories{
+    margin: 70px 0px;
+}
+
+.categories .col3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.categories .col3 img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.small-container h2{
+    font-weight: bolder;
+    text-align: center;
+    color: gray;
+    line-height: 50px;
+    position: relative;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.small-container .title::after{
+    content: '';
+    background: #ff523b;
+    width: 100px;
+    height: 5px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.col4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col4 img{
+    width: 100%;
+}
+
+.col4 h4{
+    padding-top: 5px;
+    color: gray;
+    font-weight: normal;
+    font-size: large;
+}
+
+.col4 p{
+    font-size: 14px;
+}
+
+.col4 .rating {
+    color: rgba(255, 166, 0, 0.811);
+}
+
+.col4:hover{
+transform: translateY(-20px);
+}
+
+.Add-to-cart{
+    border-radius: 20px;
+    border-color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: tomato;
+    padding: 20px 20px;
+}
+
+
+.offer{
+    background: radial-gradient(#fcfcfc,#aba8a8);
+    margin-top: 80px;
+    padding: 30px 0px;
+}
+
+.col2 .offer-image{
+    padding: 50px;
+    transition: 1.5s;
+    border-radius: 70px;
+}
+
+.offer .col2 small{
+    color: gray;
+    font-size: medium;
+}
+
+/*--------testimonial---------*/
+.testimonial{
+    margin-top: 200px;
+    width: 100%;
+    background: radial-gradient(circle, #ffcccc, #99ccff);
+    height: 400px;
+    display: flex;
+}
+
+.testimonial .reviews{
+    width: 15%;
+    height: 300px;
+    margin-left: 300px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+.reviews img{
+    border-radius: 90px;
+    height: auto;
+    width: 150px;
+    padding-top: 10px;
+}
+
+.reviews h3{
+    font-weight: bolder;
+}
+
+.reviews:hover{
+    transform: translateY(-20px);
+}
+
+.fa-quote-left{
+    font-size: 25px;
+}
+
+/*---------------------Brands-----------------------*/
+
+.brands{
+    width: 100%;
+    height: 200px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+
+.logos{
+    display: flex;
+    width: 50%;
+    margin-left: 350px;
+}
+
+.logos img{
+    padding-right: 150px;
+    width: 400px;
+    margin-top: 50px;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.logos img:hover{
+    filter: grayscale(0);
+}
+
+
+
+
+
+
+/*-----------------------footer--------------------------------*/
+
+.footer{
+    background: radial-gradient(rgb(98, 94, 94),black);
+    color: white;
+    font-size: 14px;
+    padding: 60px 0 20px;
+    
+}
+
+.footer p{
+    color: white;
+}
+
+.footer h3{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3, .footer-col-4{
+    flex-basis: 15%;
+    text-align: center;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+
+.app-logo img{
+    width: 140px;
+    cursor: pointer;
+}
+
+.search{
+    padding-left: 10px;
+    margin-left: 100px;
+    margin-top: 50px;
+    text-align: left;
+    border-radius: 10px;
+    border-color: #ff523b;
+    font-weight: bolder;
+    font-size: large;
+    background-color: rgba(239, 234, 233, 0.671);
+}
+
+/*-----------------menu-icon---------------------------*/
+
+.menu-icon{
+    width: 28px;
+    position: absolute;
+    margin-left: 1440px;
+    display: none;
+}
+
+/*------------------------media query for ipad then phone menu----------------------------*/
+
+@media only screen and (max-width: 400px) {
+    nav ul{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background: rgb(88, 87, 87);
+        width: 75%;
+        margin-left: 1110px;
+        overflow: hidden;
+        transition: max-height 1s;
+    }
+
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: white;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        width: 10%;
+    }
+    .sports-cover{
+        margin-top: 200px;
+        position: absolute;
+        width: 90%;
+        right: -100px;
+    }
+    .header{
+        height: 2800px;
+    }
+
+    .container .navbar .logo img{
+        width: 60%;
+        height: 250px;
+    }
+    .container .row .col2 h1{
+        font-size: 120px;
+        line-height: 130px;
+    }
+    .container .row .col2 p{
+        font-size: 50px;
+        padding-top: 60px;
+    }
+    .button{
+        width: 60%;
+        font-size: 80px;
+    }
+    .categories .small-container .row .col3 img{
+        width: 100%;
+        height: 350px;
+    }
+    .title{
+        font-size: 70px;
+    }
+    .small-container .title::after{
+        height: 10px;
+        top: 70px;
+        width: 50%;
+    }
+    .col4 h4{
+        font-size: 80px;
+    }
+    .rating{
+        font-size: 60px;
+    }
+    .col4 p{
+        font-size: 70px;
+    }
+    .col4 .Add-to-cart{
+        font-size: 50px;
+    }
+    .offer .small-container .row .col2 img{
+        height: 900px;
+    }
+    .offer .col2 p{
+        font-size: 50px;
+    }
+    .offer .col2 h1{
+        font-size: 80px;
+    }
+    .offer .col2 small{
+        font-size: 40px;
+    }
+    .offer .small-container .row .col2 button{
+        width: 50%;
+    }
+    .testimonial .reviews .rev1 .fa-quote-left{
+        font-size: 80px;
+    }
+    .testimonial .reviews .rev1 h6{
+        font-size: 45px;
+    }
+    .testimonial{
+        height: 1000px;
+    }
+    .testimonial .reviews .rev1 .fa-star{
+        font-size: 40px;
+    }
+    .testimonial .reviews img{
+        margin-top: 40px;
+        width: 120%;
+    }
+    .testimonial .reviews h3{
+        font-size: 60px;
+        margin-top: 25px;
+    }
+    .brands .logos img{
+        height: 150px;
+        width: 400px;
+    }
+    .footer{
+        height: 600px;
+    }
+    .footer .container .row{
+        font-size: 35px;
+    }
+
+
+    .row{
+        text-align: center;
+    }
+    .col2, .col3, .col4{
+        flex-basis: 100%;
+    }
+
+    .search{
+        width: 60%;
+        font-size: 70px;
+        left: 100px;
+        position: absolute;
+        margin-left: 450px;
+    }
+    
+}

@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle, rgb(206, 85, 55) 0%, rgb(28, 74, 139) 100%);
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.form-wrapper {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 14px 16px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.sign-in-text {
+    margin-bottom: 30px;
+    font-size: 24px;
+    background: linear-gradient(to right, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"], /* Adjusted selector for Full Name input */
+input[type="email"],
+input[type="password"] {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, /* Adjusted focus style for Full Name input */
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button {
+    padding: 15px;
+    border: 1px solid tomato; /* Changed border color */
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: tomato;
+    color: #fff;
+    width: 100%;
+    transition: background-color 1s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e05a4f;
+}
+
+.register-link {
+    color: black;
+}
+
+.register-link a {
+    margin-bottom: 30px;
+    font-size: 15px;
+    background: linear-gradient(to right, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    padding-left: 10px;
+    font-weight: bolder;
+}
+
+
+
+
+/*--------------------media for phone and ipad----------------------------------*/
+@media only screen and (max-width: 400px){
+    .form-wrapper{
+        width: 280px;
+    }
+}

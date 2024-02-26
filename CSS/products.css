@@ -1,0 +1,58 @@
+body{
+    background: radial-gradient(black,grey);
+}
+
+
+nav{
+    margin-left: 10px;
+    width: 110%;
+    padding-right: 100px;
+    padding-top: 20px;
+}
+
+.search{
+    margin-right: 50px;
+    position: absolute;
+}
+
+.footer{
+    width: 100%;
+    position: absolute;
+    right: 0%;
+}
+
+.row h2{
+    color: tomato;
+    font-size: 40px;
+    margin-right: 800px;
+}
+
+.row select{
+    justify-content: space-between;
+    margin-left: 800px;
+    margin-bottom: 50px;
+    width: 23%;
+    margin-right: 10px;
+    font-weight: bold;
+    background: rgba(205, 83, 62, 0.973);
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 400px){
+    .row h2{
+        font-size: 80px;
+    }
+    
+    .row select{
+        font-size: 40px;
+        width: 40%;
+        margin-right: 180px;
+        border-radius: 10px;
+    }
+
+    .search{
+        margin-top: 330px;
+        font-size: 62px;
+    }
+
+}
